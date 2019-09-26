@@ -9,20 +9,20 @@ const sandwichs = [
 ];
 
 const getSelectedSandwichs = () => {
-  const getSelectedSandwichs = [];
+  const selectedSandwichs = [];
   const sandwichCheckboxes = document.getElementsByClassName('sandwich');
   for (let a = 0; a < sandwichCheckboxes.length; a++){
     for(let b = 0; b < sandwichs.length; b++){
       if(sandwichCheckboxes[a].checked && sandwichCheckboxes[a].id === sandwichs[b].id){
-        getSelectedSandwichs.push(sandwichs[b]);
+        selectedSandwichs.push(sandwichs[b]);
       }
     }
   }
-return getSelectedSandwichs;
+return selectedSandwichs;
 };
 
 const sandwichPrint = () => {
-  let domString = '<h5>Select</h5>';
+  let domString = '';
   for (let c = 0; c <sandwichs.length;c++){
     domString += `<div class="form-group form-check">
     <input type="checkbox" class="form-check-input sandwich" id="${sandwichs[c].id}">

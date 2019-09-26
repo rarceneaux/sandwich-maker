@@ -9,20 +9,20 @@ const breads = [
   ];
   
   const getSelectedBread = () => {
-    const getSelectedBreads = [];
+    const selectedBreads = [];
     const breadCheckboxes = document.getElementsByClassName('bread');
     for (let d = 0; d < breadCheckboxes.length; d++){
       for(let e = 0; e < breads.length; e++){
         if(breadCheckboxes[d].checked && breadCheckboxes[d].id === breads[d].id){
-          getSelectedBreads.push(sandwichs[e]);
+          selectedBreads.push(sandwichs[e]);
         }
       }
     }
-  return getSelectedBreads;
+  return selectedBreads;
   };
   
   const BreadPrint = () => {
-    let domString2 = '<h5>Select</h5>';
+    let domString2 = '';
     for (let f = 0; f <breads.length;f++){
       domString2 += `<div class="form-group form-check">
       <input type="checkbox" class="form-check-input bread" id="${breads[f].id}">
@@ -33,4 +33,4 @@ const breads = [
   };
 
 
-  export default { getSelectedBread,BreadPrint };
+  export default { BreadPrint,getSelectedBread };
