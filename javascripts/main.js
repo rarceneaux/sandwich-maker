@@ -1,15 +1,12 @@
-import sandwich from './components/sandwich.js';
 import breads from './components/breads.js';
-import order from './components/order.js';
-
-
-
+import sandwich from './components/sandwich.js';
+import cheeses from './components/cheese.js';
 
 
 const init = () => {
-  sandwich.sandwichPrint();
-  breads.BreadPrint();
-  order.printOrderBtn();
+ breads.BreadPrint();
+ cheeses.CheesePrint();
+ sandwich.printOrderButton();
 };
 init();
 

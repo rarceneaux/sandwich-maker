@@ -1,36 +1,26 @@
 import utilities from '../helpers/utilities.js';
+import breads from './breads.js';
+import cheese from './cheese.js';
 
-const sandwichs = [
-{id:'sandwich1',name:'BLT',price: 25 },
-{id:'sandwich2',name:'Turkey',price: 50 },
-{id:'sandwich3',name:'Tuna',price: 65 },
-{id:'sandwich4',name:'Ham',price: 75 },
-{id:'sandwich5',name:'Balogna',price: 99 },
-];
-
-const getSelectedSandwichs = () => {
-  const selectedSandwichs = [];
-  const sandwichCheckboxes = document.getElementsByClassName('sandwich');
-  for (let a = 0; a < sandwichCheckboxes.length; a++){
-    for(let b = 0; b < sandwichs.length; b++){
-      if(sandwichCheckboxes[a].checked && sandwichCheckboxes[a].id === sandwichs[b].id){
-        selectedSandwichs.push(sandwichs[b]);
-      }
-    }
+const createFinalOrder = (items) => {
+  let StringA = '';
+  for(let i =0; i < items.length;i++){
+    StringA +=`<h2>${items[i].name}</h2>`;
+    // StringA +=`<h2>${items[i].price}</h2>`;
   }
-return selectedSandwichs;
+  utilities.PTD('review-order',StringA);
 };
 
-const sandwichPrint = () => {
-  let domString = '';
-  for (let c = 0; c <sandwichs.length;c++){
-    domString += `<div class="form-group form-check">
-    <input type="checkbox" class="form-check-input sandwich" id="${sandwichs[c].id}">
-    <label class="form-check-label" for="${sandwichs[c].id}">${sandwichs[c].name}</label>
-  </div>`;
-  utilities.PTD('sandwich',domString);
-  }
+const createOrderEvent = () => {
+  const selectedBreads = breads.getSelectedBread();
+  const selectedCheeses = cheese.getSelectedCheese();
+  createFinalOrder(selectedBreads.concat(selectedCheeses));
 };
 
+const printOrderButton = () => {
+  const string = '<button id="order-button" class="btn btn-success">Success</button>';
+  utilities.PTD('final-order',string);
+  document.getElementById('order-button').addEventListener('click',createOrderEvent);
+};
 
-export default { sandwichPrint, getSelectedSandwichs };
+export default { printOrderButton };

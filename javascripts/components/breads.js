@@ -13,8 +13,8 @@ const breads = [
     const breadCheckboxes = document.getElementsByClassName('bread');
     for (let d = 0; d < breadCheckboxes.length; d++){
       for(let e = 0; e < breads.length; e++){
-        if(breadCheckboxes[d].checked && breadCheckboxes[d].id === breads[d].id){
-          selectedBreads.push(sandwichs[e]);
+        if(breadCheckboxes[d].checked && breadCheckboxes[d].id === breads[e].id){
+          selectedBreads.push(breads[e]);
         }
       }
     }
