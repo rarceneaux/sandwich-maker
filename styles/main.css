@@ -22,10 +22,19 @@
   background-color: purple;
 }
 
-#main-title{
-  text-align: center;
-}
 
 .gray{
   background-color: lightgrey;
+}
+
+.aqua{
+  background-color: aqua;
+}
+
+.dodge{
+  background-color: dodgerblue;
+}
+
+.finished{
+  background-color: chocolate;
 }
