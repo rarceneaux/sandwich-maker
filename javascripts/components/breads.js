@@ -1,11 +1,11 @@
 import utilities from '../helpers/utilities.js';
 
 const breads = [
-  {id:'bread1',name:'white',price: 25 },
-  {id:'bread2',name:'wheat',price: 50 },
-  {id:'bread3',name:'pita',price: 65 },
-  {id:'bread4',name:'bun',price: 75 },
-  {id:'bread5',name:'rye',price: 99 },
+  {id:'bread1',name:'White',price: 25 },
+  {id:'bread2',name:'Wheat',price: 50 },
+  {id:'bread3',name:'Pita',price: 65 },
+  {id:'bread4',name:'Bun',price: 75 },
+  {id:'bread5',name:'Rye',price: 99 },
   ];
   
   const getSelectedBread = () => {

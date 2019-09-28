@@ -1,11 +1,11 @@
 import utilities from '../helpers/utilities.js';
 
 const meats = [
-  {id:'meat1',name:'bacon',price: 25 },
-  {id:'meat2',name:'baloney',price: 50 },
-  {id:'meat3',name:'tuna',price: 65 },
-  {id:'meat4',name:'ham',price: 75 },
-  {id:'meat5',name:'turkey',price: 99 },
+  {id:'meat1',name:'Bacon',price: 25 },
+  {id:'meat2',name:'Baloney',price: 50 },
+  {id:'meat3',name:'Tuna',price: 65 },
+  {id:'meat4',name:'Ham',price: 75 },
+  {id:'meat5',name:'Turkey',price: 99 },
   ];
   
   const getSelectedMeat = () => {
