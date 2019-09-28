@@ -1,40 +1,15 @@
-.red{
-  background-color: red;
+#review-btn{
+  text-align: center;
 }
 
-.blue{
-  background-color: blue;
+#bruh-man{
+  text-align: center;
 }
 
-.green{
-  background-color: green;
+body{
+  background-color: gold;
 }
 
-.yellow{
-  background-color: yellow;
-}
-
-.orange{
-  background-color: orange
-}
-
-.purple{
-  background-color: purple;
-}
-
-
-.gray{
-  background-color: lightgrey;
-}
-
-.aqua{
-  background-color: aqua;
-}
-
-.dodge{
-  background-color: dodgerblue;
-}
-
-.finished{
-  background-color: chocolate;
+#review-order{
+  margin: 25px;
 }

@@ -12,6 +12,7 @@ const init = () => {
  meats.MeatPrint();
  condiments.ComsPrint();
  veggies.VeggiePrint();
+ sandwich.completeButton();
  sandwich.printOrderButton();
 };
 init();

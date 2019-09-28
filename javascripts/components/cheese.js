@@ -1,11 +1,11 @@
 import utilities from '../helpers/utilities.js';
 
 const cheeses = [
-  {id:'cheese1',name:'American',price: 25 },
-  {id:'cheese2',name:'Swiss',price: 50 },
-  {id:'cheese3',name:'Goat',price: 65 },
-  {id:'cheese4',name:'Monterey Jack',price: 75 },
-  {id:'cheese5',name:'Cheddar',price: 99 },
+  {id:'cheese1',name:'American',price: 0.25 },
+  {id:'cheese2',name:'Swiss',price: 0.50 },
+  {id:'cheese3',name:'Government Cheese',price: 0.65 },
+  {id:'cheese4',name:'Monterey Jack',price: 0.75 },
+  {id:'cheese5',name:'Cheddar',price: 0.99 },
   ];
   
     const getSelectedCheese = () => {
@@ -15,7 +15,6 @@ const cheeses = [
         for(let b = 0; b < cheeses.length; b++){
           if(cheeseCheckboxes[a].checked && cheeseCheckboxes[a].id === cheeses[b].id){
             selectedCheeses.push(cheeses[b]);
-// console.log(selectedCheeses);
           }
         }
       }
@@ -30,7 +29,6 @@ const cheeses = [
         <label class="form-check-label" for="${cheeses[c].id}">${cheeses[c].name}</label>
       </div>`;
       utilities.PTD('cheese',cheeseString);
-      // console.log(cheeseString);
       }
     };
   

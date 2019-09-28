@@ -4,9 +4,4 @@ const PTD = (divId,printString) => {
 };
 
 
-
-
-
-
-
 export default { PTD };

@@ -1,11 +1,11 @@
 import utilities from '../helpers/utilities.js';
 
 const condiments = [
-  {id:'condiment1',name:'Mayo',price: 25 },
-  {id:'condiments2',name:'Mustard',price: 50 },
-  {id:'condiments3',name:'Ketchup',price: 65 },
-  {id:'condiments4',name:'Relish',price: 75 },
-  {id:'condiments5',name:'Hummis',price: 99 },
+  {id:'condiment1',name:'Mayo',price: 0.25 },
+  {id:'condiments2',name:'Mustard',price: 0.50 },
+  {id:'condiments3',name:'Ketchup',price: 0.65 },
+  {id:'condiments4',name:'Relish',price: 0.75 },
+  {id:'condiments5',name:'Hummis',price: 0.99 },
   ];
   
   const getSelectedComs = () => {
