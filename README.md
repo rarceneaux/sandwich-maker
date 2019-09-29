@@ -5,7 +5,7 @@
 Use this application to make your favorite sandwich, review your order, and finalize your purchase.
  
 ## Screenshot
-![](screenshots/Screen Shot 2019-09-29 at 10.57.24 AM.png)
+![](https://raw.githubusercontent.com/rarceneaux/sandwich-maker/master/screenshots/Screen%20Shot%202019-09-29%20at%2010.57.24%20AM.png)
  
  
 ## How to Run:
