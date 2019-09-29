@@ -40,7 +40,6 @@ const completeButton = () => {
   document.getElementById('complete-button').addEventListener('click', () => {
       utilities.PTD('review-order', '');
       utilities.PTD('review-btn', '');  
-      utilities.PTD('review-order', alert('Thank you for your order'));
 })
 };
 
